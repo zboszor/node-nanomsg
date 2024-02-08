@@ -1,4 +1,8 @@
+#ifndef SYSTEM_NANOMSG
 #include "nn.h"
+#else
+#include "nanomsg/nn.h"
+#endif
 #include "poll_ctx.h"
 
 using v8::Function;
